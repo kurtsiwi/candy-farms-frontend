@@ -1,4 +1,12 @@
 import { Button } from "@/components/ui/button";
+import {
+  Field,
+  FieldDescription,
+  FieldGroup,
+  FieldLabel,
+  FieldSet,
+} from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 
 export default function RegistrationFormPage() {
   return (
@@ -6,6 +14,8 @@ export default function RegistrationFormPage() {
       <h1 className="mb-8 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
         Hazte socio
       </h1>
+
+      <Input type="email" placeholder="Email" />
 
       <Button>Hazte socio</Button>
     </main>

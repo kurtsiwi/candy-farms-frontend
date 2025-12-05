@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
+
+import CandyFarmsLogo from "../../assets/logo-candy-farms.png";
 
 import {
   NavigationMenu,
@@ -17,12 +20,15 @@ export default function Header() {
       <NavigationMenu>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="#">LOGO</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <Link href="#">Hazte Socio</Link>
+            <Link href="#">
+            <Image
+              src={CandyFarmsLogo}
+              alt="Candy Farms Logo"
+              width={120}
+              height={40}
+              className="m-2"
+            />
+            </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenu>

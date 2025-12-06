@@ -1,20 +1,8 @@
 "use client";
 
-import Image from "next/image";
-
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
-
-import {
-  ButtonGroup,
-  ButtonGroupSeparator,
-  ButtonGroupText,
-} from "@/components/ui/button-group";
-
-import WhatsApp from "./assets/whatsapp-icon.svg";
 
 import { PhoneCall, BookOpen } from "lucide-react";
-import { use } from "react";
 
 export default function Home() {
   const handleFormRedirect = () => {
@@ -29,7 +17,7 @@ export default function Home() {
       "https://wa.me/573003123456?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20productos%20y%20servicios%20de%20Candy%20Farms.",
       "_blank"
     );
-  }
+  };
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -60,7 +48,7 @@ export default function Home() {
           </Button>
           <Button size="lg" variant="outline" onClick={handleFormRedirect}>
             {" "}
-            <BookOpen /> ¡Lista de lanzamiento!
+            <BookOpen /> Lista de lanzamiento
           </Button>
         </div>
       </main>

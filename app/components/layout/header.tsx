@@ -5,13 +5,8 @@ import CandyFarmsLogo from "../../assets/logo-candy-farms.png";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 
 export default function Header() {
@@ -33,10 +28,11 @@ export default function Header() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
+              className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeDhT588126sWSoX8FFQ0Imsx6vc6lf1HKwqTZJ82vhcVz0Mw/viewform"
               target="_blank"
             >
-              ¡El dispensario ya está funcionando!
+              El dispensario ya está funcionando
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>

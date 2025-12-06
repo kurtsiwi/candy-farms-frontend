@@ -12,7 +12,7 @@ import {
 export default function Header() {
   return (
     <header className="w-full bg-white/50 backdrop-blur-sm sticky top-0 z-50 border-b border-zinc-200 dark:bg-black/50 dark:border-zinc-800 list-none">
-      <NavigationMenu className="max-w-3xl justify-around">
+      <NavigationMenu className="max-w-full justify-around">
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link href="#">

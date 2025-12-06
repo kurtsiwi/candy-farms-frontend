@@ -14,7 +14,7 @@ export default function Home() {
 
   const handleWhatsAppRedirect = () => {
     window.open(
-      "https://wa.me/573003123456?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20productos%20y%20servicios%20de%20Candy%20Farms.",
+      "https://wa.me/56923869677?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20productos%20y%20servicios%20de%20Candy%20Farms.",
       "_blank"
     );
   };

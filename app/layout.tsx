@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Candy Farms",
-  description: "Descripcion de candy farms",
+  description: "Dispensario de marihuana medicinal en Santiago de Chile",
 };
 
 export default function RootLayout({

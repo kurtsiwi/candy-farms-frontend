@@ -78,6 +78,7 @@ export default function Home() {
             size={"lg"}
             variant={"default"}
             onClick={handleWhatsAppRedirect}
+            className="bg-[#25D366] color-white"
           >
             {" "}
             <PhoneCall /> WhatsApp

@@ -1,8 +1,36 @@
+"use client";
+
 import Image from "next/image";
+
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
+import {
+  ButtonGroup,
+  ButtonGroupSeparator,
+  ButtonGroupText,
+} from "@/components/ui/button-group";
 
 import WhatsApp from "./assets/whatsapp-icon.svg";
 
+import { PhoneCall, BookOpen } from "lucide-react";
+import { use } from "react";
+
 export default function Home() {
+  const handleFormRedirect = () => {
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSeDhT588126sWSoX8FFQ0Imsx6vc6lf1HKwqTZJ82vhcVz0Mw/viewform",
+      "_blank"
+    );
+  };
+
+  const handleWhatsAppRedirect = () => {
+    window.open(
+      "https://wa.me/573003123456?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20productos%20y%20servicios%20de%20Candy%20Farms.",
+      "_blank"
+    );
+  }
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-8 bg-white dark:bg-black sm:items-start">
@@ -22,29 +50,18 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium mt-6">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Button
+            size={"lg"}
+            variant={"default"}
+            onClick={handleWhatsAppRedirect}
           >
-            <Image
-              className="dark:invert"
-              src={WhatsApp}
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            WhatsApp
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeDhT588126sWSoX8FFQ0Imsx6vc6lf1HKwqTZJ82vhcVz0Mw/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ¡Lista de lanzamiento!
-          </a>
+            {" "}
+            <PhoneCall /> WhatsApp
+          </Button>
+          <Button size="lg" variant="outline" onClick={handleFormRedirect}>
+            {" "}
+            <BookOpen /> ¡Lista de lanzamiento!
+          </Button>
         </div>
       </main>
     </div>

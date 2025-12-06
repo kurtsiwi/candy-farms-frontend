@@ -32,9 +32,12 @@ export default function Header() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <h2 className="max-w-xs text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeDhT588126sWSoX8FFQ0Imsx6vc6lf1HKwqTZJ82vhcVz0Mw/viewform"
+              target="_blank"
+            >
               ¡El dispensario ya está funcionando!
-            </h2>
+            </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenu>
